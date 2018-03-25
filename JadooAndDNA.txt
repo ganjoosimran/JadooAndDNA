@@ -1,0 +1,34 @@
+stra = input()
+
+strb = ''
+
+flag = 's'
+
+for i in range(len(stra)):
+
+    if stra[i] == 'G':
+
+        strb=strb+'C'
+
+    elif stra[i] == 'C':
+
+        strb=strb+'G'
+
+    elif stra[i] == 'T':
+
+        strb=strb+'A'
+
+    elif stra[i] == 'A':
+
+        strb=strb+'U'
+
+    else:
+
+        print("Invalid Input")
+
+        flag = 'x'
+        break
+
+if flag == 's':
+
+    print(strb)
